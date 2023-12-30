@@ -1,0 +1,4 @@
+/* height of the container */
+.leaflet-container {
+    height: 100vh;
+  }

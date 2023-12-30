@@ -1,0 +1,109 @@
+/* Qr.css */
+
+.background {
+  /* ... (unchanged styles) */
+  background-color: rgb(30, 29, 29);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.verify-container {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: auto;
+}
+
+.video-container {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.video {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 30px;
+}
+
+.qr-text {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+
+/* Add additional styles as needed */
+
+@media screen and (max-width: 425px) {
+  .verify-container,
+  .video-container {
+    height: 40vh;
+  }
+  .video-container {
+    flex-direction: row;
+  }
+}
+
+.dropdown-container {
+  margin-top: -80px;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 400px;
+  border-radius: 20px;
+  max-height: 200px; /* Adjust this value as needed */
+  overflow-y: auto; /* Add scrollbar when content exceeds max-height */
+}
+
+.dropdown-content a {
+  justify-content: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+
+}
+
+.verify-gif {
+  transform: scale(0.5);
+  border-radius: 20px;
+  margin-top: -10rem;
+}
+
+.verify-container.move-left {
+  transition: transform 1s ease;
+}
+
+.verify-gif {
+  max-width: 100%;
+}
